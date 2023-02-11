@@ -7,7 +7,7 @@ const inputEl = document.querySelector('#name-input');
 const outputEl = document.querySelector('#name-output');
 
 function onInputElInput (event) {
-    if (event.currentTarget.value) { 
+    if (event.currentTarget.value !== "") { 
         outputEl.textContent = event.currentTarget.value;
     }
     else {

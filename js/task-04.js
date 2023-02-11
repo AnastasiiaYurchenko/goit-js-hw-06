@@ -6,7 +6,7 @@ const counterValueEl = document.querySelector('#value');
  let counterValue = counterValueEl.textContent;
 
 const decrementBtn = document.querySelector('button[data-action="decrement"]');
-console.log(Number(decrementBtn.textContent));
+// console.log(Number(decrementBtn.textContent));
 
 const incrementBtn = document.querySelector('button[data-action="increment"]');
 
