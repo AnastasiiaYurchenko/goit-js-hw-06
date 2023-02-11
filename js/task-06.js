@@ -20,10 +20,10 @@ const inputEl = document.querySelector('#validation-input');
 const onInputElBlur = (event) => {
     // довжина введених символів в інпут
     // console.log(event.currentTarget.value.length);
-    if (event.currentTarget.value.length < inputEl.dataset.length) {
-        inputEl.classList.add('invalid');
-    } else {
+    if (event.currentTarget.value.length == inputEl.dataset.length) {
         inputEl.classList.add('valid');
+    } else {
+        inputEl.classList.add('invalid');
     }
 }
 
