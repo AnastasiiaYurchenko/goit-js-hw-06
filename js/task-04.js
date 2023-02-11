@@ -1,21 +1,20 @@
 
+// Рішення з привязкою до значееня поля кнопки 
 
 // const counterValueEl = document.querySelector('#value');
-// let counterValue = counterValueEl.textContent;
+// // let counterValue = counterValueEl.textContent;
 
 // const decrementBtn = document.querySelector('button[data-action="decrement"]');
+// console.log(Number(decrementBtn.textContent));
 
 // const incrementBtn = document.querySelector('button[data-action="increment"]');
 
-// const onDecrementBtnClick = () => {
-//     counterValueEl.textContent += decrementBtn.textContent;
-//      console.log( counterValueEl.textContent);
+// function onDecrementBtnClick() {
+//     counterValueEl.textContent = Number(counterValueEl.textContent) + Number(decrementBtn.textContent);
 // };
 
 // const onIncrementBtnClick = () => {
-//     counterValueEl.textContent += incrementBtn.textContent;
-//      console.log(counterValueEl.textContent);
-
+//     counterValueEl.textContent = Number(counterValueEl.textContent) + Number(incrementBtn.textContent);
 // };
 
 // decrementBtn.addEventListener("click", onDecrementBtnClick);
