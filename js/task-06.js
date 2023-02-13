@@ -14,6 +14,8 @@
 
 let inputEl = document.querySelector('#validation-input');
 
+// 1-ше рішення з inputEl.classList = []
+
 // значення атрибута data-length
 // console.log(inputEl.dataset.length);
 
@@ -32,7 +34,8 @@ let inputEl = document.querySelector('#validation-input');
 // }
 
 
-// рішення з перевіркою наявності класу і його видалення
+//2-ге рішення з перевіркою наявності класу і його видалення
+
 const onInputElBlur = (event) => {
 
        if (event.currentTarget.value.length == inputEl.dataset.length) {
