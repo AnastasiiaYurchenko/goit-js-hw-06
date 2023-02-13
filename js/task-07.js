@@ -7,14 +7,18 @@
 const fontSizeControlEl = document.querySelector('#font-size-control');
 console.log(fontSizeControlEl);
 const textEl = document.querySelector('#text');
-console.log(textEl);
-// console.log(textEl.style.fontSize = "44px")
+// console.log(textEl);
 
+textEl.style.fontSize = `${fontSizeControlEl.value}px`;
+// console.log(textEl.style.fontSize);
+// console.log(fontSizeControlEl.value);
+ 
 const onFontSizeControlElInput = (event) => {
         const newFontSize = Number(event.currentTarget.value);
-    console.log(newFontSize);
+    // console.log(newFontSize);
 
     textEl.style.fontSize = `${newFontSize}px`;
+    // console.log(textEl.style.fontSize);
 };
 
 fontSizeControlEl.addEventListener('input', onFontSizeControlElInput);
